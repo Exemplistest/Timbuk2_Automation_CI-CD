@@ -15,7 +15,7 @@ import java.util.Set;
 public class Timbuk2FooterPage extends AbstractComponents {
 
 	private WebDriver driver;
-
+//git commited
 	@FindBy(xpath = "(//div[@class='logo'])[2]")
 	private WebElement footerLogo;
 
