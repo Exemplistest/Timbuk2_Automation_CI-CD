@@ -1,0 +1,6 @@
+org\timbuk2\connections\ConnectionsClass.class
+org\timbuk2\TestCompopnents\Timbuk2FooterPageTest.class
+org\timbuk2\connections\Listeners.class
+org\timbuk2\TestCompopnents\StandAloneTest.class
+org\timbuk2\TestCompopnents\Timbuk2CheckOutFlowTest.class
+org\timbuk2\TestCompopnents\Timbuk2ErrorValidationTest.class

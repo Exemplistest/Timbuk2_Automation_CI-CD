@@ -1,0 +1,8 @@
+org\timbuk2\AbstractComponents\AbstractComponents.class
+org\timbuk2\PageObjects\Timbuk2FooterPage.class
+org\timbuk2\PageObjects\Timbuk2ReviewAndSubmitOrder.class
+org\timbuk2\PageObjects\Timbuk2LandingPage.class
+org\timbuk2\PageObjects\Timbuk2GetProducts.class
+org\timbuk2\globalresources\ExtentReportsNG.class
+org\timbuk2\PageObjects\Timbuk2SecureCheckOut.class
+org\timbuk2\PageObjects\Timbuk2ProductPage.class

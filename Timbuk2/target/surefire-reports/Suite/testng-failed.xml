@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="org.timbuk2.connections.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Timbuk2CheckOutFlow(failed)" verbose="0">
+    <classes>
+      <class name="org.timbuk2.TestCompopnents.Timbuk2CheckOutFlowTest">
+        <methods>
+          <include name="checkOutFlow"/>
+        </methods>
+      </class> <!-- org.timbuk2.TestCompopnents.Timbuk2CheckOutFlowTest -->
+    </classes>
+  </test> <!-- Timbuk2CheckOutFlow(failed) -->
+  <test thread-count="5" parallel="tests" name="Timbuk2FooterPage(failed)" verbose="0">
+    <classes>
+      <class name="org.timbuk2.TestCompopnents.Timbuk2FooterPageTest">
+        <methods>
+          <include name="minicartValidations"/>
+        </methods>
+      </class> <!-- org.timbuk2.TestCompopnents.Timbuk2FooterPageTest -->
+    </classes>
+  </test> <!-- Timbuk2FooterPage(failed) -->
+</suite> <!-- Failed suite [Suite] -->
