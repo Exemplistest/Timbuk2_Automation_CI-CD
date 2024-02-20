@@ -4,6 +4,15 @@
   <listeners>
     <listener class-name="org.timbuk2.connections.Listeners"/>
   </listeners>
+  <test thread-count="5" parallel="tests" name="Timbuk2FooterPage(failed)">
+    <classes>
+      <class name="org.timbuk2.TestCompopnents.Timbuk2FooterPageTest">
+        <methods>
+          <include name="minicartValidations"/>
+        </methods>
+      </class> <!-- org.timbuk2.TestCompopnents.Timbuk2FooterPageTest -->
+    </classes>
+  </test> <!-- Timbuk2FooterPage(failed) -->
   <test thread-count="5" parallel="tests" name="Timbuk2CheckOutFlow(failed)">
     <classes>
       <class name="org.timbuk2.TestCompopnents.Timbuk2CheckOutFlowTest">
