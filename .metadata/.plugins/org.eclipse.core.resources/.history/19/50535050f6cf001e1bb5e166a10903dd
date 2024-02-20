@@ -50,7 +50,6 @@ public class Timbuk2CheckOutFlowTest extends ConnectionsClass {
 //	}
 //	
 
-	//changes made
 	@Test
 	public void productTextValidation() throws IOException, InterruptedException {
 		Timbuk2LandingPage landingPage = launchApplication();
