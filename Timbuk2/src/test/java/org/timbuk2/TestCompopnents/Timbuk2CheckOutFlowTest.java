@@ -53,7 +53,7 @@ public class Timbuk2CheckOutFlowTest extends ConnectionsClass {
 //			reviewAndSubmitOrder.submitAddressDetails();
 //		}
 //	}
-	//first comment
+	
 
 	@Test
 	public void productTextValidation() throws IOException, InterruptedException {
