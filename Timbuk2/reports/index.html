@@ -55,7 +55,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">Feb 1, 2024 11:17:23 AM</span>
+                    <span class="badge badge-primary">Feb 20, 2024 11:25:50 AM</span>
                 </a>
             </li>
         </ul>
@@ -72,6 +72,14 @@
         </a>
       </li>
             <li class="nav-item dropdown">
+        <a id="nav-ex" class="dropdown-toggle" href="exception.html">
+          <span class="icon-holder">
+            <i class="fa fa-bug"></i>
+          </span>
+          <span class="title">Exception</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
         <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
           <span class="icon-holder">
             <i class="fa fa-bar-chart"></i>
@@ -101,7 +109,7 @@
                                         </a>
                                         <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
                                             <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success pull-right"></span></a>
-	                                        
+	                                        <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>
 	                                        
 	                                        
 	                                        
@@ -114,34 +122,115 @@
                             </div>
                             <div class="test-list-wrapper scrollable">
                                 <ul class="test-list-item">
-                                    <li class="test-item"  status="pass" test-id="1"
+                                    <li class="test-item"  status="fail" test-id="1"
                                             author=""
                                             tag=""
                                             device="">
-                                        <div class="status-avatar pass-bg">
-                                            <i class="fa fa-check text-white"></i>
+                                        <div class="status-avatar fail-bg">
+                                            <i class="fa fa-times text-white"></i>
                                         </div>
                                         <div class="open-test">
                                             <div class="test-detail"> 
-                                                <p class="name">cartPageValidations</p> 
-                                                <p class="duration text-sm">0h 0m 0s+0ms</p> 
-                                                <span class="datetime">11:17:23 AM</span>
+                                                <p class="name">checkOutFlow</p> 
+                                                <p class="duration text-sm">0h 1m 32s+465ms</p> 
+                                                <span class="datetime">11:25:50 AM</span>
                                             </div>
                                         </div>
                                         <div class="test-contents d-none">
                                             <div class="detail-head">
                                                 <div class="p-v-10 d-inline-block"> 
                                                     <div class="info">
-                                                        <h5 class="test-status text-pass">cartPageValidations</h5>
-                                                        <span class='badge badge-success'>02.01.2024 11:17:23</span>
-                                                        <span class='badge badge-danger'>02.01.2024 11:17:23</span>
-                                                        <span class='badge badge-default'>0h 0m 0s+0ms</span>
+                                                        <h5 class="test-status text-fail">checkOutFlow</h5>
+                                                        <span class='badge badge-success'>02.20.2024 11:25:50</span>
+                                                        <span class='badge badge-danger'>02.20.2024 11:27:23</span>
+                                                        <span class='badge badge-default'>0h 1m 32s+465ms</span>
                                                     </div>
                                                     <div class="m-t-10 m-l-5">
                                                         
                                                     </div>
                                                 </div>
                                             </div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>11:27:23 AM</td>
+				<td>
+						<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 20.000
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d18739e08d94387998abb1c71ec7ceb1, clickElement {id=7B101117FD818342DF1E53B01CE1AF7A_element_580}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64452}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64452/devtoo..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (d18739e08d94387998abb1c71ec7ceb1)] -> xpath: //button[@id='deliveryMethodSubmit']]
+Session ID: d18739e08d94387998abb1c71ec7ceb1
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at org.timbuk2.PageObjects.Timbuk2ReviewAndSubmitOrder.submitAddressDetails(Timbuk2ReviewAndSubmitOrder.java:105)
+	at org.timbuk2.TestCompopnents.Timbuk2CheckOutFlowTest.checkOutFlow(Timbuk2CheckOutFlowTest.java:53)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+		<li>
+			<a href="D:\Git_CICD\Timbuk2\screenshots\checkOutFlow.png" data-featherlight="image">
+				<div class="file-icon">
+					<i class="fa fa-file-image-o"></i> 
+				</div>
+				<div class="file-info">
+					<span class="file-name">checkOutFlow</span>
+					<span class="file-size"> 62,658Kb</span>
+				</div>
+			</a>
+		</li>
+	</ul>
+</div>
                                         </div>
                                     </li>
                                     <li class="test-item"  status="pass" test-id="2"
@@ -155,7 +244,7 @@
                                             <div class="test-detail"> 
                                                 <p class="name">discountCodeValidation</p> 
                                                 <p class="duration text-sm">0h 0m 0s+0ms</p> 
-                                                <span class="datetime">11:17:23 AM</span>
+                                                <span class="datetime">11:25:50 AM</span>
                                             </div>
                                         </div>
                                         <div class="test-contents d-none">
@@ -163,8 +252,8 @@
                                                 <div class="p-v-10 d-inline-block"> 
                                                     <div class="info">
                                                         <h5 class="test-status text-pass">discountCodeValidation</h5>
-                                                        <span class='badge badge-success'>02.01.2024 11:17:23</span>
-                                                        <span class='badge badge-danger'>02.01.2024 11:17:23</span>
+                                                        <span class='badge badge-success'>02.20.2024 11:25:50</span>
+                                                        <span class='badge badge-danger'>02.20.2024 11:25:50</span>
                                                         <span class='badge badge-default'>0h 0m 0s+0ms</span>
                                                     </div>
                                                     <div class="m-t-10 m-l-5">
@@ -183,19 +272,19 @@
                                         </div>
                                         <div class="open-test">
                                             <div class="test-detail"> 
-                                                <p class="name">checkOutFlow</p> 
-                                                <p class="duration text-sm">0h 0m 10s+758ms</p> 
-                                                <span class="datetime">11:17:23 AM</span>
+                                                <p class="name">cartPageValidations</p> 
+                                                <p class="duration text-sm">0h 0m 13s+139ms</p> 
+                                                <span class="datetime">11:25:50 AM</span>
                                             </div>
                                         </div>
                                         <div class="test-contents d-none">
                                             <div class="detail-head">
                                                 <div class="p-v-10 d-inline-block"> 
                                                     <div class="info">
-                                                        <h5 class="test-status text-pass">checkOutFlow</h5>
-                                                        <span class='badge badge-success'>02.01.2024 11:17:23</span>
-                                                        <span class='badge badge-danger'>02.01.2024 11:17:34</span>
-                                                        <span class='badge badge-default'>0h 0m 10s+758ms</span>
+                                                        <h5 class="test-status text-pass">cartPageValidations</h5>
+                                                        <span class='badge badge-success'>02.20.2024 11:25:50</span>
+                                                        <span class='badge badge-danger'>02.20.2024 11:26:03</span>
+                                                        <span class='badge badge-default'>0h 0m 13s+139ms</span>
                                                     </div>
                                                     <div class="m-t-10 m-l-5">
                                                         
@@ -212,7 +301,7 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>11:17:34 AM</td>
+				<td>11:26:03 AM</td>
 				<td>
 						Test Passed
 				</td>
@@ -232,8 +321,8 @@
                                         <div class="open-test">
                                             <div class="test-detail"> 
                                                 <p class="name">secureCheckOutValidation</p> 
-                                                <p class="duration text-sm">0h 0m 37s+49ms</p> 
-                                                <span class="datetime">11:17:34 AM</span>
+                                                <p class="duration text-sm">0h 0m 53s+581ms</p> 
+                                                <span class="datetime">11:26:03 AM</span>
                                             </div>
                                         </div>
                                         <div class="test-contents d-none">
@@ -241,9 +330,9 @@
                                                 <div class="p-v-10 d-inline-block"> 
                                                     <div class="info">
                                                         <h5 class="test-status text-pass">secureCheckOutValidation</h5>
-                                                        <span class='badge badge-success'>02.01.2024 11:17:34</span>
-                                                        <span class='badge badge-danger'>02.01.2024 11:18:11</span>
-                                                        <span class='badge badge-default'>0h 0m 37s+49ms</span>
+                                                        <span class='badge badge-success'>02.20.2024 11:26:03</span>
+                                                        <span class='badge badge-danger'>02.20.2024 11:26:57</span>
+                                                        <span class='badge badge-default'>0h 0m 53s+581ms</span>
                                                     </div>
                                                     <div class="m-t-10 m-l-5">
                                                         
@@ -260,14 +349,14 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>11:18:01 AM</td>
+				<td>11:26:41 AM</td>
 				<td>
 						Test Passed
 				</td>
 			</tr>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>11:18:11 AM</td>
+				<td>11:26:57 AM</td>
 				<td>
 						Test Passed
 				</td>
@@ -287,8 +376,8 @@
                                         <div class="open-test">
                                             <div class="test-detail"> 
                                                 <p class="name">footerLinksValidation</p> 
-                                                <p class="duration text-sm">0h 0m 9s+313ms</p> 
-                                                <span class="datetime">11:18:11 AM</span>
+                                                <p class="duration text-sm">0h 0m 11s+190ms</p> 
+                                                <span class="datetime">11:26:57 AM</span>
                                             </div>
                                         </div>
                                         <div class="test-contents d-none">
@@ -296,9 +385,9 @@
                                                 <div class="p-v-10 d-inline-block"> 
                                                     <div class="info">
                                                         <h5 class="test-status text-pass">footerLinksValidation</h5>
-                                                        <span class='badge badge-success'>02.01.2024 11:18:11</span>
-                                                        <span class='badge badge-danger'>02.01.2024 11:18:20</span>
-                                                        <span class='badge badge-default'>0h 0m 9s+313ms</span>
+                                                        <span class='badge badge-success'>02.20.2024 11:26:57</span>
+                                                        <span class='badge badge-danger'>02.20.2024 11:27:08</span>
+                                                        <span class='badge badge-default'>0h 0m 11s+190ms</span>
                                                     </div>
                                                     <div class="m-t-10 m-l-5">
                                                         
@@ -315,7 +404,7 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>11:18:20 AM</td>
+				<td>11:27:08 AM</td>
 				<td>
 						Test Passed
 				</td>
@@ -334,43 +423,25 @@
                                         </div>
                                         <div class="open-test">
                                             <div class="test-detail"> 
-                                                <p class="name">productTextValidation</p> 
-                                                <p class="duration text-sm">0h 0m 5s+272ms</p> 
-                                                <span class="datetime">11:18:20 AM</span>
+                                                <p class="name">minicartValidations</p> 
+                                                <p class="duration text-sm">0h 0m 0s+0ms</p> 
+                                                <span class="datetime">11:27:08 AM</span>
                                             </div>
                                         </div>
                                         <div class="test-contents d-none">
                                             <div class="detail-head">
                                                 <div class="p-v-10 d-inline-block"> 
                                                     <div class="info">
-                                                        <h5 class="test-status text-pass">productTextValidation</h5>
-                                                        <span class='badge badge-success'>02.01.2024 11:18:20</span>
-                                                        <span class='badge badge-danger'>02.01.2024 11:18:26</span>
-                                                        <span class='badge badge-default'>0h 0m 5s+272ms</span>
+                                                        <h5 class="test-status text-pass">minicartValidations</h5>
+                                                        <span class='badge badge-success'>02.20.2024 11:27:08</span>
+                                                        <span class='badge badge-danger'>02.20.2024 11:27:08</span>
+                                                        <span class='badge badge-default'>0h 0m 0s+0ms</span>
                                                     </div>
                                                     <div class="m-t-10 m-l-5">
                                                         
                                                     </div>
                                                 </div>
                                             </div>
-<div class="detail-body mt-4">                                              
-<table class="table table-sm">
-	<thead><tr>
-		<th class="status-col">Status</th>
-		<th class="timestamp-col">Timestamp</th>
-		<th class="details-col">Details</th>
-	</tr></thead>
-	<tbody>
-			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>11:18:26 AM</td>
-				<td>
-						Test Passed
-				</td>
-			</tr>
-	</tbody>
-</table>
-</div>
                                         </div>
                                     </li>
                                     <li class="test-item"  status="pass" test-id="7"
@@ -382,19 +453,19 @@
                                         </div>
                                         <div class="open-test">
                                             <div class="test-detail"> 
-                                                <p class="name">minicartValidations</p> 
-                                                <p class="duration text-sm">0h 0m 39s+56ms</p> 
-                                                <span class="datetime">11:18:26 AM</span>
+                                                <p class="name">productTextValidation</p> 
+                                                <p class="duration text-sm">0h 0m 21s+193ms</p> 
+                                                <span class="datetime">11:27:23 AM</span>
                                             </div>
                                         </div>
                                         <div class="test-contents d-none">
                                             <div class="detail-head">
                                                 <div class="p-v-10 d-inline-block"> 
                                                     <div class="info">
-                                                        <h5 class="test-status text-pass">minicartValidations</h5>
-                                                        <span class='badge badge-success'>02.01.2024 11:18:26</span>
-                                                        <span class='badge badge-danger'>02.01.2024 11:19:05</span>
-                                                        <span class='badge badge-default'>0h 0m 39s+56ms</span>
+                                                        <h5 class="test-status text-pass">productTextValidation</h5>
+                                                        <span class='badge badge-success'>02.20.2024 11:27:23</span>
+                                                        <span class='badge badge-danger'>02.20.2024 11:27:44</span>
+                                                        <span class='badge badge-default'>0h 0m 21s+193ms</span>
                                                     </div>
                                                     <div class="m-t-10 m-l-5">
                                                         
@@ -411,14 +482,14 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>11:18:47 AM</td>
+				<td>11:27:42 AM</td>
 				<td>
 						Test Passed
 				</td>
 			</tr>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>11:19:05 AM</td>
+				<td>11:27:44 AM</td>
 				<td>
 						Test Passed
 				</td>

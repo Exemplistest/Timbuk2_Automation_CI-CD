@@ -4,13 +4,13 @@
   <listeners>
     <listener class-name="org.timbuk2.connections.Listeners"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="Timbuk2FooterPage(failed)">
+  <test thread-count="5" parallel="tests" name="Timbuk2CheckOutFlow(failed)">
     <classes>
-      <class name="org.timbuk2.TestCompopnents.Timbuk2FooterPageTest">
+      <class name="org.timbuk2.TestCompopnents.Timbuk2CheckOutFlowTest">
         <methods>
-          <include name="cartPageValidations"/>
+          <include name="checkOutFlow"/>
         </methods>
-      </class> <!-- org.timbuk2.TestCompopnents.Timbuk2FooterPageTest -->
+      </class> <!-- org.timbuk2.TestCompopnents.Timbuk2CheckOutFlowTest -->
     </classes>
-  </test> <!-- Timbuk2FooterPage(failed) -->
+  </test> <!-- Timbuk2CheckOutFlow(failed) -->
 </suite> <!-- Failed suite [Suite] -->
