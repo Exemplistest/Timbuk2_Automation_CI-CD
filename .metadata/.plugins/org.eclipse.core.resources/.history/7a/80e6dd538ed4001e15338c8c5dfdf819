@@ -22,7 +22,7 @@ public class Timbuk2CheckOutFlowTest extends ConnectionsClass {
 
 	public WebDriver driver;
 
-	//change has made for testing
+	//changed
 	@Test
 	public void checkOutFlow() throws InterruptedException, IOException, CsvException {
 //		WebDriverManager.edgedriver().setup();
