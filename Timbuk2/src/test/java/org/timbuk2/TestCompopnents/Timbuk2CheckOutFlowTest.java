@@ -21,7 +21,8 @@ import com.opencsv.exceptions.CsvException;
 public class Timbuk2CheckOutFlowTest extends ConnectionsClass {
 
 	public WebDriver driver;
-//Changes done for the checkoutflow testcase
+
+	//changed
 	@Test
 	public void checkOutFlow() throws InterruptedException, IOException, CsvException {
 //		WebDriverManager.edgedriver().setup();
