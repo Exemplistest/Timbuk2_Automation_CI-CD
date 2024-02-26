@@ -55,7 +55,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">Feb 20, 2024 06:10:03 PM</span>
+                    <span class="badge badge-primary">Feb 26, 2024 02:54:05 PM</span>
                 </a>
             </li>
         </ul>
@@ -72,6 +72,14 @@
         </a>
       </li>
             <li class="nav-item dropdown">
+        <a id="nav-ex" class="dropdown-toggle" href="exception.html">
+          <span class="icon-holder">
+            <i class="fa fa-bug"></i>
+          </span>
+          <span class="title">Exception</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
         <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
           <span class="icon-holder">
             <i class="fa fa-bar-chart"></i>
@@ -101,7 +109,7 @@
                                         </a>
                                         <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
                                             <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success pull-right"></span></a>
-	                                        
+	                                        <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>
 	                                        
 	                                        
 	                                        
@@ -123,18 +131,18 @@
                                         </div>
                                         <div class="open-test">
                                             <div class="test-detail"> 
-                                                <p class="name">cartPageValidations</p> 
+                                                <p class="name">discountCodeValidation</p> 
                                                 <p class="duration text-sm">0h 0m 0s+0ms</p> 
-                                                <span class="datetime">18:10:04 PM</span>
+                                                <span class="datetime">14:54:06 PM</span>
                                             </div>
                                         </div>
                                         <div class="test-contents d-none">
                                             <div class="detail-head">
                                                 <div class="p-v-10 d-inline-block"> 
                                                     <div class="info">
-                                                        <h5 class="test-status text-pass">cartPageValidations</h5>
-                                                        <span class='badge badge-success'>02.20.2024 18:10:04</span>
-                                                        <span class='badge badge-danger'>02.20.2024 18:10:04</span>
+                                                        <h5 class="test-status text-pass">discountCodeValidation</h5>
+                                                        <span class='badge badge-success'>02.26.2024 14:54:06</span>
+                                                        <span class='badge badge-danger'>02.26.2024 14:54:06</span>
                                                         <span class='badge badge-default'>0h 0m 0s+0ms</span>
                                                     </div>
                                                     <div class="m-t-10 m-l-5">
@@ -144,34 +152,115 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="test-item"  status="pass" test-id="2"
+                                    <li class="test-item"  status="fail" test-id="2"
                                             author=""
                                             tag=""
                                             device="">
-                                        <div class="status-avatar pass-bg">
-                                            <i class="fa fa-check text-white"></i>
+                                        <div class="status-avatar fail-bg">
+                                            <i class="fa fa-times text-white"></i>
                                         </div>
                                         <div class="open-test">
                                             <div class="test-detail"> 
-                                                <p class="name">discountCodeValidation</p> 
-                                                <p class="duration text-sm">0h 0m 0s+0ms</p> 
-                                                <span class="datetime">18:10:04 PM</span>
+                                                <p class="name">checkOutFlow</p> 
+                                                <p class="duration text-sm">0h 1m 10s+826ms</p> 
+                                                <span class="datetime">14:54:06 PM</span>
                                             </div>
                                         </div>
                                         <div class="test-contents d-none">
                                             <div class="detail-head">
                                                 <div class="p-v-10 d-inline-block"> 
                                                     <div class="info">
-                                                        <h5 class="test-status text-pass">discountCodeValidation</h5>
-                                                        <span class='badge badge-success'>02.20.2024 18:10:04</span>
-                                                        <span class='badge badge-danger'>02.20.2024 18:10:04</span>
-                                                        <span class='badge badge-default'>0h 0m 0s+0ms</span>
+                                                        <h5 class="test-status text-fail">checkOutFlow</h5>
+                                                        <span class='badge badge-success'>02.26.2024 14:54:06</span>
+                                                        <span class='badge badge-danger'>02.26.2024 14:55:16</span>
+                                                        <span class='badge badge-default'>0h 1m 10s+826ms</span>
                                                     </div>
                                                     <div class="m-t-10 m-l-5">
                                                         
                                                     </div>
                                                 </div>
                                             </div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>2:55:16 PM</td>
+				<td>
+						<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 20.000
+  (Session info: MicrosoftEdge=121.0.2277.128)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [8a3e5714bdb892748e24d343fd6ec79d, clickElement {id=91FCCCB5CBACEACA00BE92D534324962_element_560}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.128, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:55517}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55517/devtoo..., se:cdpVersion: 121.0.2277.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (8a3e5714bdb892748e24d343fd6ec79d)] -> xpath: //button[@id='deliveryMethodSubmit']]
+Session ID: 8a3e5714bdb892748e24d343fd6ec79d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at org.timbuk2.PageObjects.Timbuk2ReviewAndSubmitOrder.submitAddressDetails(Timbuk2ReviewAndSubmitOrder.java:105)
+	at org.timbuk2.TestCompopnents.Timbuk2CheckOutFlowTest.checkOutFlow(Timbuk2CheckOutFlowTest.java:54)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+		<li>
+			<a href="D:\Git_CICD\Timbuk2\screenshots\checkOutFlow.png" data-featherlight="image">
+				<div class="file-icon">
+					<i class="fa fa-file-image-o"></i> 
+				</div>
+				<div class="file-info">
+					<span class="file-name">checkOutFlow</span>
+					<span class="file-size"> 62,658Kb</span>
+				</div>
+			</a>
+		</li>
+	</ul>
+</div>
                                         </div>
                                     </li>
                                     <li class="test-item"  status="pass" test-id="3"
@@ -183,19 +272,19 @@
                                         </div>
                                         <div class="open-test">
                                             <div class="test-detail"> 
-                                                <p class="name">productTextValidation</p> 
-                                                <p class="duration text-sm">0h 0m 13s+22ms</p> 
-                                                <span class="datetime">18:10:04 PM</span>
+                                                <p class="name">cartPageValidations</p> 
+                                                <p class="duration text-sm">0h 0m 8s+318ms</p> 
+                                                <span class="datetime">14:54:06 PM</span>
                                             </div>
                                         </div>
                                         <div class="test-contents d-none">
                                             <div class="detail-head">
                                                 <div class="p-v-10 d-inline-block"> 
                                                     <div class="info">
-                                                        <h5 class="test-status text-pass">productTextValidation</h5>
-                                                        <span class='badge badge-success'>02.20.2024 18:10:04</span>
-                                                        <span class='badge badge-danger'>02.20.2024 18:10:17</span>
-                                                        <span class='badge badge-default'>0h 0m 13s+22ms</span>
+                                                        <h5 class="test-status text-pass">cartPageValidations</h5>
+                                                        <span class='badge badge-success'>02.26.2024 14:54:06</span>
+                                                        <span class='badge badge-danger'>02.26.2024 14:54:14</span>
+                                                        <span class='badge badge-default'>0h 0m 8s+318ms</span>
                                                     </div>
                                                     <div class="m-t-10 m-l-5">
                                                         
@@ -212,7 +301,7 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>6:10:17 PM</td>
+				<td>2:54:14 PM</td>
 				<td>
 						Test Passed
 				</td>
@@ -232,8 +321,8 @@
                                         <div class="open-test">
                                             <div class="test-detail"> 
                                                 <p class="name">secureCheckOutValidation</p> 
-                                                <p class="duration text-sm">0h 0m 44s+82ms</p> 
-                                                <span class="datetime">18:10:17 PM</span>
+                                                <p class="duration text-sm">0h 0m 37s+340ms</p> 
+                                                <span class="datetime">14:54:14 PM</span>
                                             </div>
                                         </div>
                                         <div class="test-contents d-none">
@@ -241,9 +330,9 @@
                                                 <div class="p-v-10 d-inline-block"> 
                                                     <div class="info">
                                                         <h5 class="test-status text-pass">secureCheckOutValidation</h5>
-                                                        <span class='badge badge-success'>02.20.2024 18:10:17</span>
-                                                        <span class='badge badge-danger'>02.20.2024 18:11:01</span>
-                                                        <span class='badge badge-default'>0h 0m 44s+82ms</span>
+                                                        <span class='badge badge-success'>02.26.2024 14:54:14</span>
+                                                        <span class='badge badge-danger'>02.26.2024 14:54:51</span>
+                                                        <span class='badge badge-default'>0h 0m 37s+340ms</span>
                                                     </div>
                                                     <div class="m-t-10 m-l-5">
                                                         
@@ -260,21 +349,14 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>6:10:43 PM</td>
+				<td>2:54:40 PM</td>
 				<td>
 						Test Passed
 				</td>
 			</tr>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>6:10:59 PM</td>
-				<td>
-						Test Passed
-				</td>
-			</tr>
-			<tr class="event-row">
-				<td><i class="fa fa-check text-pass"></i></td>
-				<td>6:11:01 PM</td>
+				<td>2:54:51 PM</td>
 				<td>
 						Test Passed
 				</td>
@@ -294,8 +376,8 @@
                                         <div class="open-test">
                                             <div class="test-detail"> 
                                                 <p class="name">footerLinksValidation</p> 
-                                                <p class="duration text-sm">0h 0m 12s+66ms</p> 
-                                                <span class="datetime">18:11:01 PM</span>
+                                                <p class="duration text-sm">0h 0m 12s+134ms</p> 
+                                                <span class="datetime">14:54:51 PM</span>
                                             </div>
                                         </div>
                                         <div class="test-contents d-none">
@@ -303,9 +385,9 @@
                                                 <div class="p-v-10 d-inline-block"> 
                                                     <div class="info">
                                                         <h5 class="test-status text-pass">footerLinksValidation</h5>
-                                                        <span class='badge badge-success'>02.20.2024 18:11:01</span>
-                                                        <span class='badge badge-danger'>02.20.2024 18:11:13</span>
-                                                        <span class='badge badge-default'>0h 0m 12s+66ms</span>
+                                                        <span class='badge badge-success'>02.26.2024 14:54:51</span>
+                                                        <span class='badge badge-danger'>02.26.2024 14:55:03</span>
+                                                        <span class='badge badge-default'>0h 0m 12s+134ms</span>
                                                     </div>
                                                     <div class="m-t-10 m-l-5">
                                                         
@@ -322,7 +404,7 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>6:11:13 PM</td>
+				<td>2:55:03 PM</td>
 				<td>
 						Test Passed
 				</td>
@@ -332,7 +414,114 @@
 </div>
                                         </div>
                                     </li>
-                                    <li class="test-item"  status="pass" test-id="6"
+                                    <li class="test-item"  status="fail" test-id="6"
+                                            author=""
+                                            tag=""
+                                            device="">
+                                        <div class="status-avatar fail-bg">
+                                            <i class="fa fa-times text-white"></i>
+                                        </div>
+                                        <div class="open-test">
+                                            <div class="test-detail"> 
+                                                <p class="name">minicartValidations</p> 
+                                                <p class="duration text-sm">0h 0m 44s+852ms</p> 
+                                                <span class="datetime">14:55:03 PM</span>
+                                            </div>
+                                        </div>
+                                        <div class="test-contents d-none">
+                                            <div class="detail-head">
+                                                <div class="p-v-10 d-inline-block"> 
+                                                    <div class="info">
+                                                        <h5 class="test-status text-fail">minicartValidations</h5>
+                                                        <span class='badge badge-success'>02.26.2024 14:55:03</span>
+                                                        <span class='badge badge-danger'>02.26.2024 14:55:48</span>
+                                                        <span class='badge badge-default'>0h 0m 44s+852ms</span>
+                                                    </div>
+                                                    <div class="m-t-10 m-l-5">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+<div class="detail-body mt-4">                                              
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>2:55:48 PM</td>
+				<td>
+						<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 20.000
+  (Session info: MicrosoftEdge=121.0.2277.128)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [746c39aee2ecafd60f2333e4964d0a60, clickElement {id=5DA735077329D60AC0AC1E68516342BC_element_593}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.128, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:56218}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56218/devtoo..., se:cdpVersion: 121.0.2277.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (746c39aee2ecafd60f2333e4964d0a60)] -> xpath: //div[@class='productlisttiles__item']]
+Session ID: 746c39aee2ecafd60f2333e4964d0a60
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.timbuk2.PageObjects.Timbuk2GetProducts.incrementAndDecrement(Timbuk2GetProducts.java:101)
+	at org.timbuk2.TestCompopnents.Timbuk2FooterPageTest.minicartValidations(Timbuk2FooterPageTest.java:31)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</textarea>
+				</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+<div class="detail-foot">
+	<ul class="attachments">
+		<li>
+			<a href="D:\Git_CICD\Timbuk2\screenshots\minicartValidations.png" data-featherlight="image">
+				<div class="file-icon">
+					<i class="fa fa-file-image-o"></i> 
+				</div>
+				<div class="file-info">
+					<span class="file-name">minicartValidations</span>
+					<span class="file-size"> 137,101Kb</span>
+				</div>
+			</a>
+		</li>
+	</ul>
+</div>
+                                        </div>
+                                    </li>
+                                    <li class="test-item"  status="pass" test-id="7"
                                             author=""
                                             tag=""
                                             device="">
@@ -341,19 +530,19 @@
                                         </div>
                                         <div class="open-test">
                                             <div class="test-detail"> 
-                                                <p class="name">minicartValidations</p> 
-                                                <p class="duration text-sm">0h 0m 33s+905ms</p> 
-                                                <span class="datetime">18:11:13 PM</span>
+                                                <p class="name">productTextValidation</p> 
+                                                <p class="duration text-sm">0h 0m 23s+163ms</p> 
+                                                <span class="datetime">14:55:17 PM</span>
                                             </div>
                                         </div>
                                         <div class="test-contents d-none">
                                             <div class="detail-head">
                                                 <div class="p-v-10 d-inline-block"> 
                                                     <div class="info">
-                                                        <h5 class="test-status text-pass">minicartValidations</h5>
-                                                        <span class='badge badge-success'>02.20.2024 18:11:13</span>
-                                                        <span class='badge badge-danger'>02.20.2024 18:11:47</span>
-                                                        <span class='badge badge-default'>0h 0m 33s+905ms</span>
+                                                        <h5 class="test-status text-pass">productTextValidation</h5>
+                                                        <span class='badge badge-success'>02.26.2024 14:55:17</span>
+                                                        <span class='badge badge-danger'>02.26.2024 14:55:40</span>
+                                                        <span class='badge badge-default'>0h 0m 23s+163ms</span>
                                                     </div>
                                                     <div class="m-t-10 m-l-5">
                                                         
@@ -370,7 +559,7 @@
 	<tbody>
 			<tr class="event-row">
 				<td><i class="fa fa-check text-pass"></i></td>
-				<td>6:11:47 PM</td>
+				<td>2:55:40 PM</td>
 				<td>
 						Test Passed
 				</td>

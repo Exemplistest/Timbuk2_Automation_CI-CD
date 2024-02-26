@@ -1,41 +1,169 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="5" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-20T18:10:04 IST" name="Suite" finished-at="2024-02-20T18:11:47 IST" duration-ms="103139">
+  <suite started-at="2024-02-26T14:54:06 IST" name="Suite" finished-at="2024-02-26T14:55:48 IST" duration-ms="102848">
     <groups>
     </groups>
-    <test started-at="2024-02-20T18:10:04 IST" name="Timbuk2CheckOutFlow" finished-at="2024-02-20T18:10:43 IST" duration-ms="39394">
-      <class name="org.timbuk2.TestCompopnents.Timbuk2CheckOutFlowTest">
-        <test-method signature="productTextValidation()[pri:0, instance:org.timbuk2.TestCompopnents.Timbuk2CheckOutFlowTest@536dbea0]" started-at="2024-02-20T18:10:04 IST" name="productTextValidation" finished-at="2024-02-20T18:10:43 IST" duration-ms="39359" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- productTextValidation -->
-      </class> <!-- org.timbuk2.TestCompopnents.Timbuk2CheckOutFlowTest -->
-    </test> <!-- Timbuk2CheckOutFlow -->
-    <test started-at="2024-02-20T18:10:04 IST" name="Timbuk2ErrorValidation" finished-at="2024-02-20T18:10:59 IST" duration-ms="55425">
+    <test started-at="2024-02-26T14:54:06 IST" name="Timbuk2ErrorValidation" finished-at="2024-02-26T14:54:40 IST" duration-ms="34102">
       <class name="org.timbuk2.TestCompopnents.Timbuk2ErrorValidationTest">
-        <test-method signature="discountCodeValidation()[pri:0, instance:org.timbuk2.TestCompopnents.Timbuk2ErrorValidationTest@19976a65]" started-at="2024-02-20T18:10:04 IST" name="discountCodeValidation" finished-at="2024-02-20T18:10:17 IST" duration-ms="13029" status="PASS">
+        <test-method signature="discountCodeValidation()[pri:0, instance:org.timbuk2.TestCompopnents.Timbuk2ErrorValidationTest@4bc222e]" started-at="2024-02-26T14:54:06 IST" name="discountCodeValidation" finished-at="2024-02-26T14:54:14 IST" duration-ms="8325" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- discountCodeValidation -->
-        <test-method signature="secureCheckOutValidation()[pri:0, instance:org.timbuk2.TestCompopnents.Timbuk2ErrorValidationTest@19976a65]" started-at="2024-02-20T18:10:17 IST" name="secureCheckOutValidation" finished-at="2024-02-20T18:10:59 IST" duration-ms="42343" status="PASS">
+        <test-method signature="secureCheckOutValidation()[pri:0, instance:org.timbuk2.TestCompopnents.Timbuk2ErrorValidationTest@4bc222e]" started-at="2024-02-26T14:54:14 IST" name="secureCheckOutValidation" finished-at="2024-02-26T14:54:40 IST" duration-ms="25744" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- secureCheckOutValidation -->
       </class> <!-- org.timbuk2.TestCompopnents.Timbuk2ErrorValidationTest -->
     </test> <!-- Timbuk2ErrorValidation -->
-    <test started-at="2024-02-20T18:10:04 IST" name="Timbuk2FooterPage" finished-at="2024-02-20T18:11:47 IST" duration-ms="103139">
+    <test started-at="2024-02-26T14:54:06 IST" name="Timbuk2CheckOutFlow" finished-at="2024-02-26T14:55:40 IST" duration-ms="94158">
+      <class name="org.timbuk2.TestCompopnents.Timbuk2CheckOutFlowTest">
+        <test-method signature="checkOutFlow()[pri:0, instance:org.timbuk2.TestCompopnents.Timbuk2CheckOutFlowTest@18ece7f4]" started-at="2024-02-26T14:54:06 IST" name="checkOutFlow" finished-at="2024-02-26T14:55:16 IST" duration-ms="70821" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 20.000
+  (Session info: MicrosoftEdge=121.0.2277.128)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [8a3e5714bdb892748e24d343fd6ec79d, clickElement {id=91FCCCB5CBACEACA00BE92D534324962_element_560}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.128, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:55517}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55517/devtoo..., se:cdpVersion: 121.0.2277.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (8a3e5714bdb892748e24d343fd6ec79d)] -> xpath: //button[@id='deliveryMethodSubmit']]
+Session ID: 8a3e5714bdb892748e24d343fd6ec79d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 20.000
+  (Session info: MicrosoftEdge=121.0.2277.128)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [8a3e5714bdb892748e24d343fd6ec79d, clickElement {id=91FCCCB5CBACEACA00BE92D534324962_element_560}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.128, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:55517}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55517/devtoo..., se:cdpVersion: 121.0.2277.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (8a3e5714bdb892748e24d343fd6ec79d)] -> xpath: //button[@id='deliveryMethodSubmit']]
+Session ID: 8a3e5714bdb892748e24d343fd6ec79d
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+at org.timbuk2.PageObjects.Timbuk2ReviewAndSubmitOrder.submitAddressDetails(Timbuk2ReviewAndSubmitOrder.java:105)
+at org.timbuk2.TestCompopnents.Timbuk2CheckOutFlowTest.checkOutFlow(Timbuk2CheckOutFlowTest.java:54)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOutFlow -->
+        <test-method signature="productTextValidation()[pri:0, instance:org.timbuk2.TestCompopnents.Timbuk2CheckOutFlowTest@18ece7f4]" started-at="2024-02-26T14:55:17 IST" name="productTextValidation" finished-at="2024-02-26T14:55:40 IST" duration-ms="23163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productTextValidation -->
+      </class> <!-- org.timbuk2.TestCompopnents.Timbuk2CheckOutFlowTest -->
+    </test> <!-- Timbuk2CheckOutFlow -->
+    <test started-at="2024-02-26T14:54:06 IST" name="Timbuk2FooterPage" finished-at="2024-02-26T14:55:48 IST" duration-ms="102848">
       <class name="org.timbuk2.TestCompopnents.Timbuk2FooterPageTest">
-        <test-method signature="cartPageValidations()[pri:0, instance:org.timbuk2.TestCompopnents.Timbuk2FooterPageTest@56dc1551]" started-at="2024-02-20T18:10:04 IST" name="cartPageValidations" finished-at="2024-02-20T18:11:01 IST" duration-ms="57132" status="PASS">
+        <test-method signature="cartPageValidations()[pri:0, instance:org.timbuk2.TestCompopnents.Timbuk2FooterPageTest@43015c69]" started-at="2024-02-26T14:54:06 IST" name="cartPageValidations" finished-at="2024-02-26T14:54:51 IST" duration-ms="45673" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cartPageValidations -->
-        <test-method signature="footerLinksValidation()[pri:0, instance:org.timbuk2.TestCompopnents.Timbuk2FooterPageTest@56dc1551]" started-at="2024-02-20T18:11:01 IST" name="footerLinksValidation" finished-at="2024-02-20T18:11:13 IST" duration-ms="12066" status="PASS">
+        <test-method signature="footerLinksValidation()[pri:0, instance:org.timbuk2.TestCompopnents.Timbuk2FooterPageTest@43015c69]" started-at="2024-02-26T14:54:51 IST" name="footerLinksValidation" finished-at="2024-02-26T14:55:03 IST" duration-ms="12133" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- footerLinksValidation -->
-        <test-method signature="minicartValidations()[pri:0, instance:org.timbuk2.TestCompopnents.Timbuk2FooterPageTest@56dc1551]" started-at="2024-02-20T18:11:13 IST" name="minicartValidations" finished-at="2024-02-20T18:11:47 IST" duration-ms="33906" status="PASS">
+        <test-method signature="minicartValidations()[pri:0, instance:org.timbuk2.TestCompopnents.Timbuk2FooterPageTest@43015c69]" started-at="2024-02-26T14:55:03 IST" name="minicartValidations" finished-at="2024-02-26T14:55:48 IST" duration-ms="44856" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 20.000
+  (Session info: MicrosoftEdge=121.0.2277.128)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [746c39aee2ecafd60f2333e4964d0a60, clickElement {id=5DA735077329D60AC0AC1E68516342BC_element_593}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.128, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:56218}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56218/devtoo..., se:cdpVersion: 121.0.2277.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (746c39aee2ecafd60f2333e4964d0a60)] -> xpath: //div[@class='productlisttiles__item']]
+Session ID: 746c39aee2ecafd60f2333e4964d0a60]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 20.000
+  (Session info: MicrosoftEdge=121.0.2277.128)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [746c39aee2ecafd60f2333e4964d0a60, clickElement {id=5DA735077329D60AC0AC1E68516342BC_element_593}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.128, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:56218}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56218/devtoo..., se:cdpVersion: 121.0.2277.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (746c39aee2ecafd60f2333e4964d0a60)] -> xpath: //div[@class='productlisttiles__item']]
+Session ID: 746c39aee2ecafd60f2333e4964d0a60
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at org.timbuk2.PageObjects.Timbuk2GetProducts.incrementAndDecrement(Timbuk2GetProducts.java:101)
+at org.timbuk2.TestCompopnents.Timbuk2FooterPageTest.minicartValidations(Timbuk2FooterPageTest.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- minicartValidations -->
