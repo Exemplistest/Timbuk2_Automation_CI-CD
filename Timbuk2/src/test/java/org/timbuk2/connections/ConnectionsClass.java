@@ -30,12 +30,14 @@ public class ConnectionsClass {
 		FileInputStream fis = new FileInputStream(
 				"D:\\selenium_jmeter_workspace\\Timbuk2\\src\\main\\java\\org\\timbuk2\\globalresources\\GlobalResources.properties");
 		prop.load(fis);
-		String browserName = System.getProperty("browser") != null ? System.getProperty("browser")
-				: prop.getProperty("browser");
-		// String browserName = prop.getProperty("browser");
+//		String browserName = System.getProperty("browser") != null ? System.getProperty("browser")
+//				: prop.getProperty("browser");
+		String browserName = prop.getProperty("browser");
 
 		if (browserName.contains("edge")) {
 			WebDriverManager.edgedriver().setup();
+			// System.setProperty("browser.edge.driver", "C:\\Users\\Nagendra
+			// Vellanki\\Downloads\\edgedriver_win64.exe");
 			EdgeOptions options = new EdgeOptions();
 			// options.addArguments("--headless");
 			options.addArguments("--remote-allow-origins=*");

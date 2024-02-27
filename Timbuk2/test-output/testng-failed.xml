@@ -9,6 +9,7 @@
       <class name="org.timbuk2.TestCompopnents.Timbuk2CheckOutFlowTest">
         <methods>
           <include name="checkOutFlow"/>
+          <include name="productTextValidation"/>
         </methods>
       </class> <!-- org.timbuk2.TestCompopnents.Timbuk2CheckOutFlowTest -->
     </classes>
@@ -17,9 +18,21 @@
     <classes>
       <class name="org.timbuk2.TestCompopnents.Timbuk2FooterPageTest">
         <methods>
+          <include name="cartPageValidations"/>
           <include name="minicartValidations"/>
+          <include name="footerLinksValidation"/>
         </methods>
       </class> <!-- org.timbuk2.TestCompopnents.Timbuk2FooterPageTest -->
     </classes>
   </test> <!-- Timbuk2FooterPage(failed) -->
+  <test thread-count="5" parallel="tests" name="Timbuk2ErrorValidation(failed)">
+    <classes>
+      <class name="org.timbuk2.TestCompopnents.Timbuk2ErrorValidationTest">
+        <methods>
+          <include name="secureCheckOutValidation"/>
+          <include name="discountCodeValidation"/>
+        </methods>
+      </class> <!-- org.timbuk2.TestCompopnents.Timbuk2ErrorValidationTest -->
+    </classes>
+  </test> <!-- Timbuk2ErrorValidation(failed) -->
 </suite> <!-- Failed suite [Suite] -->
