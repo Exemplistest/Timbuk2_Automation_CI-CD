@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.opencsv.CSVReader"/>
-    <fullyQualifiedTypeName name="org.timbuk2.PageObjects.Timbuk2ReviewAndSubmitOrder"/>
-    <fullyQualifiedTypeName name="org.timbuk2.PageObjects.Timbuk2SecureCheckOut"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.edge.EdgeDriver"/>
     <fullyQualifiedTypeName name="io.github.bonigarcia.wdm.WebDriverManager"/>
+    <fullyQualifiedTypeName name="org.timbuk2.PageObjects.Timbuk2SecureCheckOut"/>
+    <fullyQualifiedTypeName name="org.timbuk2.PageObjects.Timbuk2ReviewAndSubmitOrder"/>
+    <fullyQualifiedTypeName name="com.opencsv.CSVReader"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
     <fullyQualifiedTypeName name="com.opencsv.exceptions.CsvException"/>
 </qualifiedTypeNameHistroy>
